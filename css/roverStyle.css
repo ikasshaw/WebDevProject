@@ -12,6 +12,7 @@ body {
     font-family:  "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
+    color: white;
 }
 
 .navBar {
@@ -48,7 +49,12 @@ body {
 }
 
 .mainContent {
+    display: flex;
+    flex-direction: column;
     flex: 1 0 auto;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .footerLogo {
@@ -77,4 +83,89 @@ body {
     text-align: center;
     height: 70px;
     width: 100%;
+}
+
+.video  {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+
+.tableauChart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 60%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    overflow-y: scroll;
+}
+/* .includedMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+} */
+
+.byuRover {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 500px) {
+    
+    .byuRover {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .video {
+        
+        float: none;
+        clear: both;
+        width: 60%;
+        height: auto;
+        position: relative;
+        padding: 25px 0px 35.25% 0px;
+        padding-bottom: 35.25%;
+        height: 0;
+
+    }
+
+    .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .competitionDetails {
+        margin-right: 40px;
+    
+    }
+}
+
+.competitionDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
