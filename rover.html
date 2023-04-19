@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rover</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <link rel="stylesheet" href="css/roverStyle.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,7 +16,7 @@
 <body>
   <!-- Nav Bar -->
 
-  <div class="navBar">
+  <div class="navBar" id="top">
     <!-- <div> -->
     <a href="index.html">Home</a>
     <a href="resume.html">Resume</a>
@@ -55,21 +56,20 @@
               <li>Insert USB device</li>
             </ul>
           </li>
-          <li>Science</li>
-          <ul>
-            <li>Collect soil samples</li>
-            <li>Test soil samples for life</li>
-            <li>Return sealed soil sample</li>
-            <li>Visually inspect rock samples</li>
-            <li>Present findings to panel of judges</li>
-          </ul>
+          <li>Science
+            <ul>
+              <li>Collect soil samples</li>
+              <li>Test soil samples for life</li>
+              <li>Return sealed soil sample</li>
+              <li>Visually inspect rock samples</li>
+              <li>Present findings to panel of judges</li>
+            </ul>
+          </li>
         </ol>
       </div>
-      <div class="video">
-        <iframe src="https://www.youtube.com/embed/jRx5ok8e2bg" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+
+      <div class="image">
+        <img src="assets/img/rover_new_legs.jpg" alt="BYU Mars Rover with new legs">
       </div>
     </div>
 
@@ -79,44 +79,43 @@
 
   <div class="includedMedia">
 
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/jRx5ok8e2bg" title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
     <div class="tablauChart">
-          <div class="tableauPlaceholder" id="viz1681886441976" style="position: relative">
-            <noscript
-              ><a href="#"
-                ><img
-                  alt="Missions to Mars "
-                  src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;MissionstoMars&#47;MissionstoMars&#47;1_rss.png"
-                  style="border: none" /></a></noscript
-            ><object class="tableauViz" style="display: none">
-              <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-              <param name="embed_code_version" value="3" />
-              <param name="site_root" value="" />
-              <param name="name" value="MissionstoMars&#47;MissionstoMars" />
-              <param name="tabs" value="no" />
-              <param name="toolbar" value="yes" />
-              <param
-                name="static_image"
-                value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;MissionstoMars&#47;MissionstoMars&#47;1.png"
-              />
-              <param name="animate_transition" value="yes" />
-              <param name="display_static_image" value="yes" />
-              <param name="display_spinner" value="yes" />
-              <param name="display_overlay" value="yes" />
-              <param name="display_count" value="yes" />
-              <param name="language" value="en-US" />
-            </object>
-          </div>
-          <script type="text/javascript">
-            var divElement = document.getElementById('viz1681886441976');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            vizElement.style.width = '1366px';
-            vizElement.style.height = '2027px';
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-          </script>
-        </div>
+      <div class="tableauPlaceholder" id="viz1681886441976" style="position: relative">
+        <noscript><a href="#"><img alt="Missions to Mars "
+              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;MissionstoMars&#47;MissionstoMars&#47;1_rss.png"
+              style="border: none" /></a></noscript><object class="tableauViz" style="display: none">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+          <param name="embed_code_version" value="3" />
+          <param name="site_root" value="" />
+          <param name="name" value="MissionstoMars&#47;MissionstoMars" />
+          <param name="tabs" value="no" />
+          <param name="toolbar" value="yes" />
+          <param name="static_image"
+            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mi&#47;MissionstoMars&#47;MissionstoMars&#47;1.png" />
+          <param name="animate_transition" value="yes" />
+          <param name="display_static_image" value="yes" />
+          <param name="display_spinner" value="yes" />
+          <param name="display_overlay" value="yes" />
+          <param name="display_count" value="yes" />
+          <param name="language" value="en-US" />
+        </object>
       </div>
+      <script type="text/javascript">
+        var divElement = document.getElementById('viz1681886441976');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = '1366px';
+        vizElement.style.height = '2027px';
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
   </div>
 
   <!-- Mars Rover Image -->
@@ -131,6 +130,7 @@
     <div class="logos">
       <img class="footerLogo" src="assets/img/In-White-72.png" alt="linkedIn logo" />
       <img class="footerLogo" src="assets/img/github-mark-white.png" alt="github logo" />
+      <a href="#top">Back to Top</a>
     </div>
   </div>
 </body>
