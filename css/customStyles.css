@@ -1,0 +1,113 @@
+html, body {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content {flex: 1 0 auto;}
+.footer {bottom: 0;}
+
+.resume_section_header {
+    font-size: 1.4em;
+    color: white;
+    margin: 0 0 1em 0;
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: bold;
+}
+
+.resume_item_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0 1em 0;
+}
+
+.resume_item_info, p, li{
+    font-size: .825em;
+    color: white;
+    margin-bottom: 0px;
+
+}
+
+.resume_item_info>p {
+    padding: 0;
+    margin: 0;
+}
+
+@media (min-width: 500px) {
+
+    .resume_item_info,
+    p,
+    li {
+        font-size: .9em;
+    }
+}
+
+ul {
+    padding-left: 2.5em;
+    justify-content: flex-start;
+}
+
+.myUL {
+    margin: 10px 0 10px 0;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: start;
+    justify-content: center;
+    justify-items: center;
+}
+
+.skillType {
+    /* display: block; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0 1em; */
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.colla{
+  cursor: pointer;
+  display: flex;
+}
+
+.colla + input {
+  display: none; /* hide the checkboxes */
+}
+
+.colla + input + div{
+  display: none;
+}
+
+.colla + input:checked + div{
+  display: flex;
+  height: fit-content;
+}
+
+.myUL > li {
+    font-size: inherit;
+}

@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../assets/img/repeating_bg.jpg');
+    background-color: transparent;
+    background-size: cover;
+    margin: 0;
+    font-family:  "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navBar {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    height: 82px;
+    width: 233.82px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    /* font-family: monospace; */
+    
+}
+
+.navBar > a {
+    display: block;
+    text-decoration: solid;
+    color: #fff;
+    width: 33%;
+    font-family: inherit;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.0625em;
+    line-height: 1.5;
+    padding: 24px 16px 24px 16px;
+    text-align: left;
+    list-style-position: outside;
+    text-decoration-thickness: auto;
+    text-decoration-line: none;
+}
+
+.mainContent {
+    flex: 1 0 auto;
+}
+
+.footerLogo {
+    height: 24px;
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+.logos {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 70px;
+    width: 100%;
+}
